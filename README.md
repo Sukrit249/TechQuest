@@ -118,4 +118,4 @@ Harry		Become much better in mixing PHP, SASS and HTML
 
 Sukret		Become better in Git-Management
 
-Mariano	We don’t know jet
+Mariano		We don’t know jet
