@@ -1,0 +1,57 @@
+//80s color
+$primary-color: #2428f4;
+$secondary-color: #f61eb7;
+$btn-color: #fb6733;
+$hover-color: #fbdc6f;
+$light-color: #66e7ff;
+$mute-light: #2d5f68;
+$dark-color: #0d043b;
+$true-color: #09fe9a;
+$false-color: #f42874;
+
+//ibm plex mono - classy
+//bangers - fun
+//press start 2p - 8bit
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap");
+$primary-font: "IBM Plex Mono", monospace;
+$btn-font: "Press Start 2P", cursive;
+$bangers: "Bangers", cursive;
+
+// //set text color based on bg
+// @function set-text-color($color) {
+//   @if (lightness($color) > 70) {
+//     @return $dark-color;
+//   } @else {
+//     @return $light-color;
+//   }
+// }
+
+// //set background & text color
+// @mixin set-background($color) {
+//   background-color: $color;
+//   color: set-text-color($color);
+// }
+
+//margin padding
+$spaceamounts: (1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+  .mx-#{$space} {
+    margin: 0 #{$space}rem;
+  }
+  .p-#{$space} {
+    margin: #{$space}rem;
+  }
+  .py-#{$space} {
+    margin: #{$space}rem 0;
+  }
+  .px-#{$space} {
+    margin: 0 #{$space}rem;
+  }
+}

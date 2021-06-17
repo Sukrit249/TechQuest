@@ -1,0 +1,48 @@
+.welcome {
+  background: linear-gradient($primary-color, $light-color);
+  color: $hover-color;
+  height: 250px;
+
+  .container {
+    max-width: 100vw;
+    // padding: 0 30px;
+    margin: 0 auto;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+
+    .row {
+      .logo-title {
+        display: inline-flex;
+        flex-grow: 2;
+
+        img {
+          width: 7rem;
+          color: $hover-color;
+          filter: drop-shadow(5px 5px 5px $secondary-color);
+        }
+
+        h1 {
+          font-family: "Bangers", cursive;
+          font-size: 5rem;
+          text-shadow: 5px 5px 10px $secondary-color;
+          letter-spacing: 0.2rem;
+        }
+      }
+
+      .tagline {
+        flex-grow: 1;
+        p {
+          font-size: 1.2rem;
+        }
+      }
+
+      .makeit {
+        flex-grow: 1;
+      }
+    }
+  }
+}
