@@ -1,0 +1,46 @@
+// @import 'header';
+// @import 'footer';
+@import "variables";
+@import "buttons";
+@import "header";
+@import "card";
+// base
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  line-height: 1.6;
+  font-size: 16px;
+
+  //Magic???
+  @media (max-width: 1200px) {
+    font-size: calc(10px + 0.2vw);
+    
+  }
+}
+
+body {
+  background-color: $mute-light;
+  font-family: $primary-font;
+  font-size: 1rem;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $secondary-color;
+  //   &:link {
+  //     color: $light-color;
+  //   }
+  //   &:visited {
+  //     color: $mute-light;
+  //   }
+  &:hover {
+    color: $hover-color;
+    transform: scale(0.9);
+  }
+}
