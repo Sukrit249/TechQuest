@@ -1,5 +1,13 @@
-<?php require_once 'includes/header.inc.php'; ?>
+<?php 
+  require_once 'includes/header.inc.php'; 
+  require_once 'php/functions.php'; 
 
+  addCard("regular");
+?>
+
+
+
+<!-- 
     <div class="card" style="width: 18rem;">
       <img src="/images/tiger_filler.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -44,5 +52,5 @@
         <a href="#" class="btn btn-primary">Play Game</a>
       </div>
     </div>
-
+ -->
   <?php require_once 'includes/footer.inc.php'; ?>

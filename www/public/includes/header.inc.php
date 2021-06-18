@@ -25,7 +25,7 @@
         </div>
 
         <div class="makeit">
-          <a href="create.php" class="btn-primary">Create Your Own Quiz!</a></li>
+          <a href="quiz_creator.php" class="btn-primary">Create Your Own Quiz!</a></li>
         </div>  
       </div>
     </div>

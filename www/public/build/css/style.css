@@ -255,4 +255,9 @@ body a:hover {
   transform: scale(0.9);
 }
 
+pre {
+  color: yellow;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=style.css.map */
