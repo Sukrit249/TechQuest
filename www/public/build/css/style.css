@@ -224,6 +224,21 @@ header .container .row .makeit {
   right: 10px;
 }
 
+#step2 {
+  display: none;
+}
+#step2 .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#step2 .container .card .img img {
+  cursor: pointer;
+}
+
+#addQuestion, #save_quiz {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

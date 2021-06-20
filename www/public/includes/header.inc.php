@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PHP Include Exercise</title>
   <link rel="stylesheet" href="/build/css/style.css">
-  
+  <script src="js/addQ.js"></script>
   </head>
   
 <body>
@@ -25,7 +25,7 @@
         </div>
 
         <div class="makeit">
-          <a href="quiz_creator.php" class="btn-primary">Create Your Own Quiz!</a></li>
+          <a href="/quiz_creator.php" class="btn-primary">Create Your Own Quiz!</a></li>
         </div>  
       </div>
     </div>
