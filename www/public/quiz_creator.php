@@ -1,5 +1,5 @@
 <?php 
-  require_once 'includes/header.inc.php'; 
+  require_once 'php/includes/header.inc.php'; 
   require_once 'php/functions.php'; 
 ?>
 <!-- get a js array of all folders in quiz/custom using json_encode on scandir -->
@@ -110,5 +110,5 @@
 
 </div>
 <?php
-  require_once 'includes/footer.inc.php'; 
+  require_once 'php/includes/footer.inc.php'; 
 ?>
