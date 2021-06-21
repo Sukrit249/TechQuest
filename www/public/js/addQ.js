@@ -47,3 +47,8 @@ function checkQuestions() {
   }
 
 };
+
+function addQuestion() {
+  console.log("new Question");
+  document.getElementById
+};

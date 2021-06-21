@@ -8,7 +8,7 @@
   <title>PHP Include Exercise</title>
   <link rel="stylesheet" href="/build/css/style.css">
   <script src="js/addQ.js"></script>
-  </head>
+</head>
   
 <body>
 

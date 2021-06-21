@@ -20,7 +20,7 @@ function addCard($cat) {
       <div class="card-body">
         <h5 class="card-title">' . $info[0] . ' Quiz</h5>
         <p class="card-text">Created by ' . $info[1] . '</p>
-        <a href="' . $value . '.php" class="btn btn-primary">Play Game</a>
+        <a href="quiz-'. $value . "/quiz_" . $value . '.php" class="btn btn-primary">Play Game</a>
       </div>
     </div>';
   }
