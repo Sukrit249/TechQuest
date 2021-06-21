@@ -1,7 +1,7 @@
 <?php 
 
 $info = [
-  "html",                                                  // name of the quiz
+  "html",                                                 // name of the quiz
   "author",                                               // quiz created by ...
   '"/images/tiger_filler.jpg"'                            // path to the image (size of the image width=278px height=341px)
 ];

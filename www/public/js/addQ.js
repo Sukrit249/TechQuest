@@ -42,6 +42,8 @@ function checkQuestions() {
 
   if(check) {
     document.getElementById("save_quiz").disabled = false;
+  } else {
+    document.getElementById("save_quiz").disabled = true;
   }
 
 };
