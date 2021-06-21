@@ -4,6 +4,7 @@
 @import "buttons";
 @import "header";
 @import "card";
+@import "create_quiz";
 // base
 
 * {
@@ -28,19 +29,24 @@ body {
   font-family: $primary-font;
   font-size: 1rem;
   width: 100%;
+  
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+    //   &:link {
+    //     color: $light-color;
+    //   }
+    //   &:visited {
+    //     color: $mute-light;
+    //   }
+    &:hover {
+      color: $hover-color;
+      transform: scale(0.9);
+    }
+  }
 }
 
-a {
-  text-decoration: none;
-  color: $secondary-color;
-  //   &:link {
-  //     color: $light-color;
-  //   }
-  //   &:visited {
-  //     color: $mute-light;
-  //   }
-  &:hover {
-    color: $hover-color;
-    transform: scale(0.9);
-  }
+pre {
+  color: yellow;
+  font-weight: bold;
 }

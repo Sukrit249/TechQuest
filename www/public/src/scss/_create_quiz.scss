@@ -1,0 +1,19 @@
+#step2 {
+  display: none;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card {
+      .img {
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+#addQuestion, #save_quiz {
+  display: none;
+}
