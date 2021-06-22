@@ -1,5 +1,7 @@
 <?php 
 
+
+
 $info = [
   "git",                                                  // name of the quiz
   "author",                                               // quiz created by ...
@@ -7,8 +9,8 @@ $info = [
 ];
 
 $qs = [
-  ["question 1?", "correct answer"],                      // define question and correct answer
-  ["question 2?", "correct answer"],
+  ["Is git the same as github?", "no"],                      // define question and correct answer
+  ["What happened if you type git status in the terminal? ", "It show modified file in working dicetory"],
   ["question 3?", "correct answer"]
 ];
 
@@ -17,3 +19,4 @@ $as = [
   ["answer1 for q2", "answer2 for q2", "answer3 for q2"],
   ["answer1 for q3", "answer2 for q3", "answer3 for q3"]
 ];
+?>
