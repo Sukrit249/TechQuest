@@ -1,13 +1,49 @@
+hr {
+  line-height: 2em;
+  margin: 1em 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+form {
+  display: block;
+}
+#creator { 
+  font-family: $bangers;
+  font-size: 3rem;
+  text-align: center;
+  input[type=text] {
+    font-family: $primary-font;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 80%;
+    height: 3rem;
+    border: none;
+    border-radius: 1rem;
+  }
+  input[type=radio] {
+    transform: scale(2);
+  }
+}
+
 #step2 {
   display: none;
+  form {
+  }
   .container {
-    display: flex;
-    flex-wrap: wrap;
-
-    .card {
-      .img {
-        img {
-          cursor: pointer;
+   
+    text-align: center;
+    display: block;
+    .cards {
+      display: flex;
+      justify-content: center;
+      .card {
+        width: 12rem;
+        .img {
+          img {
+            cursor: pointer;
+          }
         }
       }
     }
@@ -16,4 +52,32 @@
 
 #addQuestion, #save_quiz {
   display: none;
+}
+
+#qs {
+  display: flex;
+}
+
+.question {
+  text-align: center;
+  display: block;
+  p {
+    display: flex;  
+    justify-content: space-between;
+
+  }
+}
+
+#save_quiz, #create_quiz {
+  margin: 2em 0;
+}
+
+.cContainer {
+  text-align: center;
+  #createComplete {
+    h1 {
+      font-family: $bangers;
+      font-size: 3em;
+    }
+  }
 }

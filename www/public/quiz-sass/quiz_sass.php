@@ -1,7 +1,7 @@
 <?php 
   require_once '../php/includes/header.inc.php';       // Includes the header
   require_once '../php/functions.php';             // Includes the functions.php
-  require_once '../quiz/regular/css/create.php';   // Path to the php file where the 3 arrays are set
+  require_once '../quiz/regular/sass/create.php';   // Path to the php file where the 3 arrays are set
   ?>
   <!-- Page content stats here -->
   

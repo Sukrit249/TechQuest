@@ -16,6 +16,10 @@
   @extend %btn;
   background-color: $btn-color;
   color: lighten($btn-color, 20%);
+  &:disabled {
+    background-color: #999999;
+    color: #555555;
+  }
 }
 
 // .btn-secondary {
