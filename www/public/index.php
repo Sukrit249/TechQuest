@@ -6,5 +6,7 @@
 
 
   addCard("regular");
+
+  addCard("custom");
   require_once 'php/includes/footer.inc.php'; 
 ?>
