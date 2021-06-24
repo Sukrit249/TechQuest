@@ -28,7 +28,6 @@ session_start();
 
   <h1>
     <?php
-    echo "hi bey";
      echo $qs[$counter][0]; ?>
   </h1>
  

@@ -47,20 +47,12 @@ $as = [
   "Repository in Git is a place where Git stores all the files.", 
   "it chatch all the deletet file, with that we can still get a file back"],
   //q3
-   ["for q5", "for q55", "for q555"],
-  //q4
+  
  ["Gitlab", 
   "Githat", 
   "Gitfam"],
   //q5
-  ["for q6", "for q66", "for q666"],
-  //q6
-  ["for q7", "for q77", "for q777"],
-  //q7
-  [""],
-  //q8
-  [""],
-  //q9
-  [""],
+
+ 
 ];
 
