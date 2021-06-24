@@ -6,6 +6,7 @@
 @import "card";
 @import "create_quiz";
 @import "gitquiu";
+@import "quiz-sass";
 
 // base
 
@@ -22,7 +23,6 @@ html {
   //Magic???
   @media (max-width: 1200px) {
     font-size: calc(10px + 0.2vw);
-    
   }
 }
 
@@ -31,7 +31,7 @@ body {
   font-family: $primary-font;
   font-size: 1rem;
   width: 100%;
-  
+
   a {
     text-decoration: none;
     color: $secondary-color;
