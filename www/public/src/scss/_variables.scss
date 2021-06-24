@@ -18,21 +18,6 @@ $btn-font: "Press Start 2P", cursive;
 $bangers: "Bangers", cursive;
 
 
-// //set text color based on bg
-// @function set-text-color($color) {
-//   @if (lightness($color) > 70) {
-//     @return $dark-color;
-//   } @else {
-//     @return $light-color;
-//   }
-// }
-
-// //set background & text color
-// @mixin set-background($color) {
-//   background-color: $color;
-//   color: set-text-color($color);
-// }
-
 //margin padding
 // $spaceamounts: (1, 2, 3, 4, 5);
 
