@@ -24,11 +24,14 @@ session_start();
   
 <!-- Creating the form for the questions using the elements out of the arrays
      to fill in the text of the answer and the value thats gona be send to the result.php -->
+
+
+<!-- OLD FORM
 <form action="result.php" method="POST">
 
   <h1>
     <?php
-     echo $qs[$counter][0]; ?>
+     //echo $qs[$counter][0]; ?>
   </h1>
  
   <input 
@@ -36,12 +39,12 @@ session_start();
     name="A" 
     id="A1" 
     value="
-      <!-- <?php $as[$counter][0]; ?> -->
-    <?php $as[$counter][0];?>
+       <?php //$as[$counter][0]; ?> 
+    <?php //$as[$counter][0];?>
     ">
   <label 
     for="A1">
-      <?php echo $as[$counter][0]; ?>
+      <?php //echo $as[$counter][0]; ?>
     </label>
     <br>
 
@@ -50,11 +53,11 @@ session_start();
     name="A" 
     id="A2" 
     value="
-      <?php  $as[$counter][1]; ?>
+      <?php  //$as[$counter][1]; ?>
     ">
   <label 
     for="A2">
-     <?php echo $as[$counter][1]; ?>
+     <?php //echo $as[$counter][1]; ?>
   </label>
 <br>
 
@@ -63,32 +66,41 @@ session_start();
     name="A" 
     id="A3" 
     Value="
-      <?php  $as[$counter][1]; ?>
+      <?php //$as[$counter][1]; ?>
     ">
   <label 
     for="A3">
-      <?php echo $as[$counter][2]; ?>
+      <?php //echo $as[$counter][2]; ?>
 </label>
 <br>
 
   <button>SENDEN</button>
 </form>
+-->
 
 
-
-
-      
+<div class="quizStack">
   
-  <!-- ends here -->
-  <!--
-    // Just a var_dump that to see whats inside the 3 arrays (need to be deleted befor finishing)
-    /*echo '<pre class="pre">';
-    echo '$info<br>';
-    var_dump($info);
-    echo '$qs<br>';
-    var_dump($qs);
-    echo '$as<br>';
-    var_dump($as);
-    echo '</pre>';
-    // end of the var_dump
-    require_once '../php/includes/footer.inc.php';       // Includes the footer */
+  <div class="sass-intro">
+    <h2>Git Quiz</h2>
+    <p class="freebie">
+      Made by Sukrit
+    </p>
+  </div>
+  
+  <form action="result.php" method="POST">
+    
+    <div class="quizContainer">
+      <div class="qText">
+        <h3>Question <?php echo $counter + 1?></h3>
+        <h4> <?php echo $qs[$counter][0]; ?> </h4>
+        <br>
+        <button type="submit" class="btn" name="A" value="<?php echo $as[$counter][0];?>"><?php echo $as[$counter][0];?></button> 
+        <button type="submit" class="btn" name="A" value="<?php echo $as[$counter][1];?>"><?php echo $as[$counter][1];?></button> 
+        <button type="submit" class="btn" name="A" value="<?php echo $as[$counter][2];?>"><?php echo $as[$counter][2];?></button> 
+
+          </div>
+        </div>
+        
+      </form> 
+    </div>

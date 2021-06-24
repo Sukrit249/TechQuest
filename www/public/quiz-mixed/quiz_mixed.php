@@ -27,21 +27,29 @@ $counter = $_SESSION['quiz_counter'];
 <!-- Creating the form for the questions using the elements out of the arrays
    to fill in the text of the answer and the value thats gona be send to the result.php -->
 
-<div class="qContainer">
-  <div>
 
-    <form action="quiz_mixed_result.php" method="POST">
-    
-    <h1><?php echo $qs[$counter][0]; ?></h1>
-    
-    <input type="radio" name="A" id="A1" value="<?php echo $as[$counter][0]; ?>">
-    <label for="A1"><?php echo $as[$counter][0]; ?></label><br>
-    <input type="radio" name="A" id="A2" value="<?php echo $as[$counter][1]; ?>">
-    <label for="A2"><?php echo $as[$counter][1]; ?></label><br>
-    <input type="radio" name="A" id="A3" Value="<?php echo $as[$counter][2]; ?>">
-    <label for="A3"><?php echo $as[$counter][2]; ?></label><br>
-    <button>SENDEN</button>
-    </form>
+<div class="quizStack">
+  
+  <div class="sass-intro">
+    <h2>Mixed Quiz</h2>
+    <p class="freebie">
+      Made by Harry Mächler
+    </p>
   </div>
+  
+  <form action="quiz_mixed_result.php" method="POST">
+    
+    <div class="quizContainer">
+      <div class="qText">
+        <h3>Question <?php echo $counter + 1?></h3>
+        <h4> <?php echo $qs[$counter][0]; ?> </h4>
+        <br>         
+        <button type="submit" class="btn" name="A" value="<?php echo $as[$counter][0];?>"><?php echo $as[$counter][0];?></button> 
+        <button type="submit" class="btn" name="A" value="<?php echo $as[$counter][1];?>"><?php echo $as[$counter][1];?></button> 
+        <button type="submit" class="btn" name="A" value="<?php echo $as[$counter][2];?>"><?php echo $as[$counter][2];?></button> 
 
-  </div>  
+          </div>
+        </div>
+        
+      </form> 
+    </div>

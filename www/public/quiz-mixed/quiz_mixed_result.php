@@ -30,6 +30,19 @@ require_once '../php/functions.php';              // Includes the functions.php
     <a href="../index.php" class="btn btn-primary">Home</a>
   </div>
 </div>
+          
+<div class='congrats'>
+  <div class='row'>
+    <h2>Congratulations!!</h2> 
+    <h3>You got <span><h2><?php echo $_SESSION['score'];?></h2></span> out of <?php echo count($qs)?> correct!</h3>
+    <br><br>
+    <a class="btn-primary" href="quiz_mixed.php">Try Again</a>
+    <a class="btn-primary" href="../../index.php">Return Home</a>
+  </div>
+</div>
+
+
+
 
 
 

@@ -24,14 +24,16 @@
     require_once '../php/functions.php';
   }
 ?>
-<div>
-<h1>Result</h1>
-<h2><?php echo($_SESSION['score']) . " out of " . count($qs)?></h2>
-<div>
-<a href="../index.php" class="btn btn-primary">Home</a>
+          
+<div class='congrats'>
+  <div class='row'>
+    <h2>Congratulations!!</h2> 
+    <h3>You got <span><h2><?php echo $_SESSION['score'];?></h2></span> out of <?php echo count($qs)?> correct!</h3>
+    <br><br>
+    <a class="btn-primary" href="quiz_git.php">Try Again</a>
+    <a class="btn-primary" href="../../index.php">Return Home</a>
+  </div>
 </div>
-</div>
-
 
 <?php
 require_once '../php/includes/header.inc.php';
