@@ -7,7 +7,6 @@
 
 
 
-
 <?php
 if (isset($_GET['quiz'])) {
   $_SESSION['question'] = 1;
@@ -36,6 +35,7 @@ $as = $_SESSION['as'];
     var_dump($as);
     echo '<pre>';
   */
+
 ?>
 <div class="qcontainer">
   <div>
@@ -68,7 +68,6 @@ $as = $_SESSION['as'];
     </form>
   </div>
 </div>
-
 
 <?php
 require_once 'php/includes/footer.inc.php';

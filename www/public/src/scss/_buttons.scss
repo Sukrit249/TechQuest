@@ -22,12 +22,15 @@
   }
 }
 
+
 // .btn-secondary {
 //   @extend %btn;
 //   background-color: lighter($btn-color, 10%);
 // }
+
 .btn-guess {
   @extend %btn;
   //if answer correct $yes color
   //else if answer is wrong $no color
 }
+

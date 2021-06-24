@@ -6,7 +6,6 @@ $info = [];
 $qs = [];
 $as = [];
 
-
 foreach ($_POST as $key => $value) {
   
   if ($key == "title" || $key == "author" || $key == "pic") {
@@ -32,22 +31,13 @@ foreach ($_POST as $key => $value) {
         break;
       
       default:
+
         # code...
+        
         break;
     }
   }
 }
-/*
-echo "<pre>";
-//var_dump($_POST);
-echo "<br>INFO <br>";
-var_dump($info);
-echo "<br> QUESTIONS <br>";
-var_dump($qs);
-echo "<br> ANSWERS <br>";
-var_dump($as);
-echo "</pre>";
-*/
 
 if (!file_exists('../quiz/custom/'.$info[0])) {
   mkdir('../quiz/custom/'.$info[0]);

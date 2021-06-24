@@ -32,3 +32,4 @@ function addCard($cat) {
       </div>';
     }
   }
+

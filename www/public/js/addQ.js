@@ -47,6 +47,7 @@ function checkQuestions() {
   }
 
 };
+
 var i = 4;
 function addQuestion() {
   console.log("new Question");

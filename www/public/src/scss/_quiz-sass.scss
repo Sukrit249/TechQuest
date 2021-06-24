@@ -1,0 +1,129 @@
+.quizStack {
+  box-sizing: border-box;
+  width: 100vw;
+  background-color: lighten($mute-light, 20%);
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  // .hide {
+  //     display: none;
+  // }
+  .sass-intro {
+    margin: 10px 10px 50px 10px;
+    padding: 10px;
+    display: inline-block;
+    width: 90vw;
+    height: 200px;
+    font-size: 1.1rem;
+
+    h2 {
+      font-family: $bangers;
+      font-size: 60px;
+      color: $secondary-color;
+      text-shadow: 5px 7px 10px $dark-color;
+      letter-spacing: 0.2rem;
+    }
+
+    .freebie {
+      background-color: lighten($mute-light, 40%);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 5px 5px 8px darken($mute-light, 25%);
+    }
+  }
+
+  .quizContainer {
+    width: 80vw;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: $light-color;
+    box-shadow: 5px 5px 8px darken($mute-light, 25%);
+    justify-content: space-around;
+
+    .qText {
+      font-family: $primary-font;
+      padding: 10px;
+
+      h3 {
+        font-family: $bangers;
+        letter-spacing: 0.2rem;
+        font-size: 42px;
+        display: flex;
+        color: $secondary-color;
+        text-shadow: 2px 2px 5px $dark-color;
+      }
+
+      h4 {
+        color: $mute-light;
+        font-size: larger;
+      }
+
+      button {
+        @extend %btn;
+        font-family: $primary-font;
+
+        font-weight: 800;
+        background-color: $btn-color;
+        color: lighten($btn-color, 25%);
+      }
+
+      .btn {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 10px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.congrats {
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  .row {
+    width: 90vw;
+    margin: 20px;
+    background-color: lighten($mute-light, 20%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media (min-width: 700px) {
+      flex-direction: column;
+    }
+  }
+
+  h2 {
+    font-family: $bangers;
+    font-size: 4rem;
+    color: $secondary-color;
+    text-shadow: 5px 7px 10px $dark-color;
+    letter-spacing: 0.2rem;
+  }
+
+  h3 {
+    font-family: $primary-font;
+    font-size: 2rem;
+    color: $hover-color;
+    text-shadow: 2px 2px 5px $dark-color;
+  }
+
+  a.btn-primary {
+    @extend %btn;
+    // font-family: $primary-font;
+    font-weight: 800;
+    background-color: $btn-color;
+    color: lighten($btn-color, 25%);
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    font-size: 1.2rem;
+  }
+}
