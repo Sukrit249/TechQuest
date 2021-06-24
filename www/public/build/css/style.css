@@ -119,6 +119,36 @@ header .container .row .makeit {
   display: none;
 }
 
+
+.Quiz {
+  margin-top: 20px;
+  font-size: 200%;
+  font-weight: 500;
+  text-align: left;
+  box-sizing: content-box;
+  width: 100%;
+  border: solid green 3px;
+}
+
+.answer {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 150%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border: solid red 3px;
+  padding: 35px;
+}
+
+.Submit {
+  margin-top: 20px;
+  box-sizing: content-box;
+  width: 25%;
+  border: solid yellow;
+  padding: 5px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+
 .quizStack {
   box-sizing: border-box;
   width: 100vw;
@@ -228,6 +258,7 @@ header .container .row .makeit {
   width: 30%;
   margin: 20px;
   font-size: 1.2rem;
+
 }
 
 * {
