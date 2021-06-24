@@ -1,4 +1,6 @@
 <?php 
+session_start(); // starting/continue the session
+// Creating a session array with a question and the correct answer
   require_once '../php/includes/header.inc.php';       // Includes the header
   require_once '../php/functions.php';             // Includes the functions.php
   require_once '../quiz/regular/sass/create.php';   // Path to the php file where the 3 arrays are set
@@ -7,22 +9,29 @@
 
 
   //end test
-
-function btnClick() {
-
+// Creating an empty array for the answers given by the client
+$_SESSION['score'] = [];
+  
+if (!isset($_SESSION['quiz_counter'])) { // If the $_SEEION['quiz_counter'] is not already set 
+  // Creating a session variable with a counter for the question selection
+  $_SESSION['quiz_counter'] = 0;
 }
+// just a shorter way to get the quiz counter value
+$counter = $_SESSION['quiz_counter'];
 
 
- function runQuestion($num) {
+ function runQuestion($counter) {
    global $qa;
-    echo '<h4>' . $qa[$num][0] . '</h4>';
+    echo '<h4>' . $qa[$counter][0] . '</h4>';
     echo "<br><ul>";
     for ($aText = 0; $aText < 3; $aText++) {
-      echo '<button type="button" class="btn" name="' . $num. '-answers" value="' . $qa[$num][1][$aText][1] . '">' . $qa[$num][1][$aText][0] . '</button>';
+      echo '<button type="submit" class="btn" name="options" value="' . $qa[$counter][1][$aText][1] . '">' . $qa[$counter][1][$aText][0] . '</button>';
     }
 
     
  }
+
+
 
 //  $score = 0;
 
@@ -44,82 +53,20 @@ function btnClick() {
         </p>
     </div>
     
-    <form action="quiz_sass.php" method="POST">
+    <form action="results_sass.php" method="POST">
 
       <div class="quizContainer">
         <div class="qText">
-          <h3>Question 1</h3>
+          <h3>Question <?php echo $counter + 1?></h3>
           <?php
-           runQuestion(0);
+           runQuestion($counter);
           ?>
           </div>
-          <div class="qText">
-          <h3>Question 2</h3>
-
-          <?php
-           runQuestion(1);
-          ?>
-          </div>
-          <div class="qText">
-          <h3>Question 3</h3>
-
-          <?php
-           runQuestion(2);
-          ?>
-          </div>
-          <div class="qText">
-          <h3>Question 4</h3>
-
-          <?php
-           runQuestion(3);
-          ?>
-          </div>
-          <div class="qText">
-          <h3>Question 5</h3>
-
-          <?php
-           runQuestion(4);
-          ?>
-          </div>
-          <div class="qText">
-          <h3>Question 6</h3>
-
-          <?php
-           runQuestion(5);
-          ?>
-          </div>
-          <div class="qText">
-          <h3>Question 7</h3>
-
-          <?php
-           runQuestion(6);
-          ?>
-          </div>
-          <div class="qText">
-          <h3>Question 8</h3>
-
-          <?php
-           runQuestion(7);
-          ?>
-          </div>
-          <div class="qText">
-          <h3>Question 9</h3>
-
-          <?php
-           runQuestion(8);
-          ?>
-          </div>
-          <div class="qText">
-          <h3>Question 10</h3>
-
-          <?php
-           runQuestion(9);
-          ?>
-          </div>
+          
 
       </div>
 
-      <button type="submit" class="btn" value="Finished">Finished</button>
+      <!-- <button type="submit" class="btn" value="Finished">Finished</button> -->
 
 
     </form> 
