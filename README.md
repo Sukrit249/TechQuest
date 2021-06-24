@@ -155,6 +155,6 @@ Mirko		Having fun and giving ideas for extra features
 
 Harry		Become much better in mixing PHP, SASS and HTML
 
-Sukret		Become better in Git-Management
+Sukrit		Become better in Git-Management
 
 Mariano		We don’t know jet
