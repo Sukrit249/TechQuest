@@ -1,4 +1,10 @@
 <?php 
+  session_start();
+  //echo "Status = " . session_status() . "<br>";
+  session_destroy();
+  //echo "Status = " . session_status() . "<br>";
+
+  //var_dump($_SESSION);
   require_once 'php/includes/header.inc.php'; 
   require_once 'php/functions.php'; 
 
