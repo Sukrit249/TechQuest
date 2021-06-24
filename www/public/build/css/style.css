@@ -1,125 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap");
-.m-1 {
-  margin: 1rem;
-}
-
-.my-1 {
-  margin: 1rem 0;
-}
-
-.mx-1 {
-  margin: 0 1rem;
-}
-
-.p-1 {
-  margin: 1rem;
-}
-
-.py-1 {
-  margin: 1rem 0;
-}
-
-.px-1 {
-  margin: 0 1rem;
-}
-
-.m-2 {
-  margin: 2rem;
-}
-
-.my-2 {
-  margin: 2rem 0;
-}
-
-.mx-2 {
-  margin: 0 2rem;
-}
-
-.p-2 {
-  margin: 2rem;
-}
-
-.py-2 {
-  margin: 2rem 0;
-}
-
-.px-2 {
-  margin: 0 2rem;
-}
-
-.m-3 {
-  margin: 3rem;
-}
-
-.my-3 {
-  margin: 3rem 0;
-}
-
-.mx-3 {
-  margin: 0 3rem;
-}
-
-.p-3 {
-  margin: 3rem;
-}
-
-.py-3 {
-  margin: 3rem 0;
-}
-
-.px-3 {
-  margin: 0 3rem;
-}
-
-.m-4 {
-  margin: 4rem;
-}
-
-.my-4 {
-  margin: 4rem 0;
-}
-
-.mx-4 {
-  margin: 0 4rem;
-}
-
-.p-4 {
-  margin: 4rem;
-}
-
-.py-4 {
-  margin: 4rem 0;
-}
-
-.px-4 {
-  margin: 0 4rem;
-}
-
-.m-5 {
-  margin: 5rem;
-}
-
-.my-5 {
-  margin: 5rem 0;
-}
-
-.mx-5 {
-  margin: 0 5rem;
-}
-
-.p-5 {
-  margin: 5rem;
-}
-
-.py-5 {
-  margin: 5rem 0;
-}
-
-.px-5 {
-  margin: 0 5rem;
-}
-
-.quizStack .quizContainer .qText button, .btn-guess, .btn-primary {
+.quizStack .quizContainer .qText button, .btn-primary {
   display: inline-block;
   border-radius: 5px 30px;
   padding: 8px 20px;
@@ -128,7 +8,7 @@
   font-size: medium;
   box-shadow: 3px 4px 6px #0d043b;
 }
-.quizStack .quizContainer .qText button:hover, .btn-guess:hover, .btn-primary:hover {
+.quizStack .quizContainer .qText button:hover, .btn-primary:hover {
   transform: scale(0.9);
 }
 
@@ -254,7 +134,7 @@ header .container .row .makeit {
   display: inline-block;
   width: 90vw;
   height: 200px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .quizStack .sass-intro h2 {
   font-family: "Bangers", cursive;
@@ -269,13 +149,18 @@ header .container .row .makeit {
   border-radius: 5px;
   box-shadow: 5px 5px 8px #060e0f;
 }
-.quizStack .quizContainer .qText {
-  font-family: "IBM Plex Mono", monospace;
+.quizStack .quizContainer {
+  width: 80vw;
   margin: 20px;
   padding: 5px;
   border-radius: 5px;
   background-color: #66e7ff;
   box-shadow: 5px 5px 8px #060e0f;
+  justify-content: space-around;
+}
+.quizStack .quizContainer .qText {
+  font-family: "IBM Plex Mono", monospace;
+  padding: 10px;
 }
 .quizStack .quizContainer .qText h3 {
   font-family: "Bangers", cursive;
@@ -295,11 +180,10 @@ header .container .row .makeit {
   color: #fdc4b0;
 }
 .quizStack .quizContainer .qText .btn {
-  display: inline-block;
-  width: 190px;
-  height: 175px;
-  font-size: 16px;
-  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  font-size: 1.2rem;
 }
 
 * {
