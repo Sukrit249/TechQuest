@@ -16,6 +16,10 @@
   background-color: #fb6733;
   color: #fdb297;
 }
+.btn-primary:disabled {
+  background-color: #999999;
+  color: #555555;
+}
 
 header {
   background: linear-gradient(#2428f4, #66e7ff);
@@ -96,28 +100,98 @@ header .container .row .makeit {
   left: 10px;
 }
 .card .card-body .card-text {
-  font-family: "IBM Plex Mono", monospace;
-  color: #0d043b;
-  font-size: 1.2rem;
+  font-family: "Bangers", cursive;
+  color: #f61eb7;
+  text-shadow: 3px 4px 5px #2428f4;
+  font-size: 1.9rem;
   position: absolute;
   bottom: 100px;
   right: 10px;
+}
+
+hr {
+  line-height: 2em;
+  margin: 1em 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: block;
+}
+
+#creator {
+  font-family: "Bangers", cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+#creator input[type=text] {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 80%;
+  height: 3rem;
+  border: none;
+  border-radius: 1rem;
+}
+#creator input[type=radio] {
+  transform: scale(2);
 }
 
 #step2 {
   display: none;
 }
 #step2 .container {
-  display: flex;
-  flex-wrap: wrap;
+  text-align: center;
+  display: block;
 }
-#step2 .container .card .img img {
+#step2 .container .cards {
+  display: flex;
+  justify-content: center;
+}
+#step2 .container .cards .card {
+  width: 12rem;
+}
+#step2 .container .cards .card .img img {
   cursor: pointer;
 }
 
 #addQuestion, #save_quiz {
   display: none;
 }
+
+#qs {
+  display: flex;
+}
+
+.question {
+  text-align: center;
+  display: block;
+}
+.question p {
+  display: flex;
+  justify-content: space-between;
+}
+
+#save_quiz, #create_quiz {
+  margin: 2em 0;
+}
+
+.cContainer {
+  text-align: center;
+}
+.cContainer #createComplete h1 {
+  font-family: "Bangers", cursive;
+  font-size: 3em;
+}
+
+.qContainer {
+  display: block;
+  text-align: center;
+
 
 .Quiz {
   margin-top: 20px;
@@ -295,5 +369,3 @@ pre {
   color: yellow;
   font-weight: bold;
 }
-
-/*# sourceMappingURL=style.css.map */
