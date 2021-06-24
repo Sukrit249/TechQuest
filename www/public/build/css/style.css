@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap");
-.congrats a.btn-primary, .quizStack .quizContainer .qText button, .btn-primary {
+.congrats a.btn-primary, .quizStack .quizContainer .qText button, .btn-guess, .btn-primary {
   display: inline-block;
   border-radius: 5px 30px;
   padding: 8px 20px;
@@ -8,7 +8,7 @@
   font-size: medium;
   box-shadow: 3px 4px 6px #0d043b;
 }
-.congrats a.btn-primary:hover, .quizStack .quizContainer .qText button:hover, .btn-primary:hover {
+.congrats a.btn-primary:hover, .quizStack .quizContainer .qText button:hover, .btn-guess:hover, .btn-primary:hover {
   transform: scale(0.9);
 }
 
@@ -100,10 +100,9 @@ header .container .row .makeit {
   left: 10px;
 }
 .card .card-body .card-text {
-  font-family: "Bangers", cursive;
-  color: #f61eb7;
-  text-shadow: 3px 4px 5px #2428f4;
-  font-size: 1.9rem;
+  font-family: "IBM Plex Mono", monospace;
+  color: #0d043b;
+  font-size: 1.2rem;
   position: absolute;
   bottom: 100px;
   right: 10px;
@@ -191,7 +190,7 @@ form {
 .qContainer {
   display: block;
   text-align: center;
-
+}
 
 .Quiz {
   margin-top: 20px;
@@ -369,3 +368,5 @@ pre {
   color: yellow;
   font-weight: bold;
 }
+
+/*# sourceMappingURL=style.css.map */
