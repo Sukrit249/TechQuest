@@ -10,7 +10,7 @@ $info = [
   // define question and correct answer
 $qs = [
   //q0
-    ["Is Git the thing as Github?", "No"],
+    ["Is Git the same as Github?", "No"],
     //q1
       ["What happened if you type git status in the terminal? ", "It show modified file in working dicetory."],
       //q2
@@ -41,26 +41,25 @@ $as = [
   //q1 
   ["It show modified file in working dicetory", 
   "Git says Hello!",
-   "This i sthe right answer truest me!"],
+   "This is the right answer truest me!"],
   //q2
-  ["a Club only for Gitmember", 
+  ["A Club only for Gitmember", 
   "Repository in Git is a place where Git stores all the files.", 
-  "it chatch all the deletet file, with that we can still get a file back"],
+  "It chatch all the deletet file, with that we can still get a file back"],
   //q3
-   ["for q5", "for q55", "for q555"],
-  //q4
+  ["Github",
+   "Gitpup",
+   "Gittup"],
+
+  ["that's a trick Question i won't fall for that!", 
+  "No", 
+  "Yes?"],
+
  ["Gitlab", 
   "Githat", 
   "Gitfam"],
   //q5
-  ["for q6", "for q66", "for q666"],
-  //q6
-  ["for q7", "for q77", "for q777"],
-  //q7
-  [""],
-  //q8
-  [""],
-  //q9
-  [""],
+
+ 
 ];
 
