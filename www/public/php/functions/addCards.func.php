@@ -20,9 +20,10 @@ function addCard($cat) {
       echo '<div class="card" style="width: 18rem;">
       <img src=' . $info[2] . ' class="card-img-top" alt="...">
       <div class="card-body">
-      <h5 class="card-title">' . $info[0] . ' Quiz</h5>
-      <p class="card-text">Created by ' . $info[1] . '</p>
-      <a href="' .  $link . '"class="btn btn-primary">Play Game</a>
+        <h5 class="card-title">' . $info[0] . ' Quiz</h5>
+        <p class="card-text">Created by ' . $info[1] . '</p>
+        <a href="quiz-'. $value . "/quiz_" . $value . '.php" class="btn btn-primary">Play Game</a>
+
       </div>
       </div>';
     }

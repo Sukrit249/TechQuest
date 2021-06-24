@@ -1,4 +1,5 @@
 <?php 
+
 session_start(); // starting/continue the session
 
 require_once '../php/includes/header.inc.php';    // Includes the header
