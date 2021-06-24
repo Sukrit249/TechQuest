@@ -4,9 +4,6 @@
   require_once 'php/functions.php'; 
 ?>
 
-
-
-
 <?php 
   if(!isset($_SESSION['question'])) {
     $_SESSION['question'] = 1;
@@ -14,16 +11,7 @@
   $info = json_decode(file_get_contents('quiz/custom/' .$_GET["quiz"] . '/info.json'));
   $qs = json_decode(file_get_contents('quiz/custom/' .$_GET["quiz"] . '/qs.json'));
   $as = json_decode(file_get_contents('quiz/custom/' .$_GET["quiz"] . '/as.json'));
-  /*
-    echo '<pre>';
-    echo 'Info<br>';
-    var_dump($info);
-    echo 'Qs<br>';
-    var_dump($qs);
-    echo 'As<br>';
-    var_dump($as);
-    echo '<pre>';
-  */
+
 ?>
 <div class="qcontainer">  
   <div>
@@ -43,7 +31,6 @@
 
     ?>
 </div>
-
 
 <?php 
   require_once 'php/includes/footer.inc.php'; 

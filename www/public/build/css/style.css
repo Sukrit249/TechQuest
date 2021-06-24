@@ -220,9 +220,10 @@ header .container .row .makeit {
   left: 10px;
 }
 .card .card-body .card-text {
-  font-family: "IBM Plex Mono", monospace;
-  color: #0d043b;
-  font-size: 1.2rem;
+  font-family: "Bangers", cursive;
+  color: #f61eb7;
+  text-shadow: 3px 4px 5px #2428f4;
+  font-size: 1.9rem;
   position: absolute;
   bottom: 100px;
   right: 10px;
@@ -347,5 +348,3 @@ pre {
   color: yellow;
   font-weight: bold;
 }
-
-/*# sourceMappingURL=style.css.map */
