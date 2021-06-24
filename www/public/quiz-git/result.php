@@ -14,11 +14,25 @@
     $_SESSION['quiz_counter']++;
                                                // add 1 to the question counter
     if ($_SESSION['quiz_counter'] == count($qs)) {       // if the question counter is equal to the number of elements in the $_SESSION['questions']
-      echo "HERE IS YOUR RESULT"; // add validation here and delete echo =)
+      $score = $_SESSION['score'];
+      $total = count($qs);
       session_destroy();                                                     // End the session 
     } else {
       header('Location: quiz_git.php');                                          // load the quiz page
     }
+    require_once '../php/includes/header.inc.php';
+    require_once '../php/functions.php';
   }
-  
-  
+?>
+<div>
+<h1>Result</h1>
+<h2><?php echo($_SESSION['score']) . " out of " . count($qs)?></h2>
+<div>
+<a href="../index.php" class="btn btn-primary">Home</a>
+</div>
+</div>
+
+
+<?php
+require_once '../php/includes/header.inc.php';
+?>

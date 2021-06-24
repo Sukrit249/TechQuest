@@ -22,9 +22,14 @@ require_once '../php/includes/header.inc.php';    // Includes the header
 require_once '../php/functions.php';              // Includes the functions.php
 ?>
 
-
- <h1><?php echo($_SESSION['score']) . " out of " . count($qs)?></h1>
-
+<div>
+  <div>
+    <h1><?php echo($_SESSION['score']) . " out of " . count($qs)?></h1>
+  </div>
+  <div>
+    <a href="../index.php" class="btn btn-primary">Home</a>
+  </div>
+</div>
 
 
 

@@ -37,7 +37,7 @@ $as = $_SESSION['as'];
   */
 
 ?>
-<div class="qcontainer">
+<div class="cContainer">
   <div>
     <h1>Question <?php echo $_SESSION['question']; ?>:</h1>
   </div>
