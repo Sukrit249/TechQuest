@@ -1,5 +1,4 @@
-<?php 
-
+<?php
 session_start(); // starting/continue the session
 
 require_once '../php/includes/header.inc.php';    // Includes the header
@@ -17,6 +16,7 @@ if (!isset($_SESSION['quiz_counter'])) {
 
   $_SESSION['quiz_counter'] = 0;
   $_SESSION['score'] = 0;
+  echo ($_SESSION['quiz_counter']);
 }
 
 // just a shorter way to get the quiz counter value

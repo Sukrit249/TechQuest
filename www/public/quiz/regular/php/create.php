@@ -3,7 +3,7 @@
 $info = [
   "php",                                                  // name of the quiz
   "Mirko",                                                // quiz created by ...
-  '"/images/tiger_filler.jpg"'                            // path to the image (size of the image width=278px height=341px)
+  '"images/tiger_filler.jpg"'                            // path to the image (size of the image width=278px height=341px)
 ];
 
 $qs = [

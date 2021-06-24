@@ -22,8 +22,8 @@
           <div class="card">
             <div class="img">
               <label for="pic1">
-                <input type="radio" id="pic1" name="pic" value="/images/q01.jpg" checked><br>
-                <img src="/images/q01.jpg" class="card-img-top" alt="">
+                <input type="radio" id="pic1" name="pic" value="images/q01.jpg" checked><br>
+                <img src="images/q01.jpg" class="card-img-top" alt="">
               </label>
             </div>
           </div>
@@ -31,8 +31,8 @@
           <div class="card">
             <div class="img">
               <label for="pic2">
-                <input type="radio" id="pic2" name="pic" value="/images/q02.jpg"><br>
-                <img src="/images/q02.jpg" class="card-img-top" alt="">
+                <input type="radio" id="pic2" name="pic" value="images/q02.jpg"><br>
+                <img src="images/q02.jpg" class="card-img-top" alt="">
               </label>
             </div>
           </div>
@@ -40,8 +40,8 @@
           <div class="card">
             <div class="img">
               <label for="pic3">
-                <input type="radio" id="pic3" name="pic" value="/images/q03.jpg"><br>
-                <img src="/images/q03.jpg" class="card-img-top" alt="">
+                <input type="radio" id="pic3" name="pic" value="images/q03.jpg"><br>
+                <img src="images/q03.jpg" class="card-img-top" alt="">
               </label>
             </div>
           </div>
@@ -49,8 +49,8 @@
           <div class="card">
             <div class="img">
               <label for="pic4">
-                <input type="radio" id="pic4" name="pic" value="/images/q04.jpg"><br>
-                <img src="/images/q04.jpg" class="card-img-top" alt="">
+                <input type="radio" id="pic4" name="pic" value="images/q04.jpg"><br>
+                <img src="images/q04.jpg" class="card-img-top" alt="">
               </label>
             </div>
           </div>
@@ -58,8 +58,8 @@
           <div class="card">
             <div class="img">
               <label for="pic5">
-                <input type="radio" id="pic5" name="pic" value="/images/q05.jpg"><br>
-                <img src="/images/q05.jpg" class="card-img-top" alt="">
+                <input type="radio" id="pic5" name="pic" value="images/q05.jpg"><br>
+                <img src="images/q05.jpg" class="card-img-top" alt="">
               </label>
             </div>
           </div>

@@ -1,7 +1,7 @@
 <?php 
   session_start();
   //echo "Status = " . session_status() . "<br>";
-  session_destroy();
+ 
   //echo "Status = " . session_status() . "<br>";
 
   //var_dump($_SESSION);

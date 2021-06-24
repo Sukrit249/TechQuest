@@ -34,6 +34,8 @@ header .container .row {
   max-width: 100%;
   display: block;
   justify-content: space-between;
+  align-items: center;
+
 }
 @media (min-width: 1390px) {
   header .container .row {
@@ -61,6 +63,7 @@ header .container .row .tagline {
   flex-grow: 1;
 }
 header .container .row .tagline p {
+  padding: 0 1.5rem;
   font-size: 1.2rem;
 }
 header .container .row .makeit {
@@ -72,6 +75,7 @@ header .container .row .makeit {
   flex-wrap: wrap;
   width: 92vw;
   justify-content: center;
+  margin: auto;
 }
 
 .card {

@@ -4,7 +4,7 @@ $info = [
 
   "mixed",                    // name of the quiz
   "Harry",                    // quiz created by ...
-  "/images/mixed-pic-1.jpg"   // path to the image (size of the image width=278px height=341px)
+  "images/mixed-pic-1.jpg"   // path to the image (size of the image width=278px height=341px)
 ];
 
 $qs = [

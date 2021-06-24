@@ -5,7 +5,7 @@
 $info = [
   "git",                                                  // name of the quiz
   "author",                                               // quiz created by ...
-  '"/images/tiger_filler.jpg"'                            // path to the image (size of the image width=278px height=341px)
+  '"images/tiger_filler.jpg"'                            // path to the image (size of the image width=278px height=341px)
 ];
   // define question and correct answer
 $qs = [

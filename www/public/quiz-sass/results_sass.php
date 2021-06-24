@@ -13,8 +13,8 @@
     // echo $_SESSION['score'];
     if ($_SESSION['quiz_counter'] == count($qa)) {
     
-      require_once '../php/includes/header.inc.php';       // Includes the header
-    require_once '../php/functions.php';             // Includes the functions.php
+      require_once '../php/includes/header.inc.php';       
+    require_once '../php/functions.php';            
       echo "<div class='congrats'> <div class='row'>
       <h2>Congratulations!!</h2> 
       <h3>You got <span><h2>" . $_SESSION['score'] . 

@@ -1,5 +1,4 @@
-<?php 
-session_start(); //starting, continue the session
+<?php session_start(); //starting, continue the session
 include '../quiz/regular/mixed/create.php';
 
   if(!isset($_POST['A'])) {                                               // if no value in $_POST['A'] is submited
@@ -19,7 +18,6 @@ include '../quiz/regular/mixed/create.php';
     header('location: quiz_mixed.php');                                         // load the quiz page
   }
 }
-
 require_once '../php/includes/header.inc.php';    // Includes the header
 require_once '../php/functions.php';              // Includes the functions.php
 ?>
