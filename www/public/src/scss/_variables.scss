@@ -17,6 +17,7 @@ $primary-font: "IBM Plex Mono", monospace;
 $btn-font: "Press Start 2P", cursive;
 $bangers: "Bangers", cursive;
 
+
 // //set text color based on bg
 // @function set-text-color($color) {
 //   @if (lightness($color) > 70) {
@@ -33,25 +34,25 @@ $bangers: "Bangers", cursive;
 // }
 
 //margin padding
-$spaceamounts: (1, 2, 3, 4, 5);
+// $spaceamounts: (1, 2, 3, 4, 5);
 
-@each $space in $spaceamounts {
-  .m-#{$space} {
-    margin: #{$space}rem;
-  }
-  .my-#{$space} {
-    margin: #{$space}rem 0;
-  }
-  .mx-#{$space} {
-    margin: 0 #{$space}rem;
-  }
-  .p-#{$space} {
-    margin: #{$space}rem;
-  }
-  .py-#{$space} {
-    margin: #{$space}rem 0;
-  }
-  .px-#{$space} {
-    margin: 0 #{$space}rem;
-  }
-}
+// @each $space in $spaceamounts {
+//   .m-#{$space} {
+//     margin: #{$space}rem;
+//   }
+//   .my-#{$space} {
+//     margin: #{$space}rem 0;
+//   }
+//   .mx-#{$space} {
+//     margin: 0 #{$space}rem;
+//   }
+//   .p-#{$space} {
+//     margin: #{$space}rem;
+//   }
+//   .py-#{$space} {
+//     margin: #{$space}rem 0;
+//   }
+//   .px-#{$space} {
+//     margin: 0 #{$space}rem;
+//   }
+// }
