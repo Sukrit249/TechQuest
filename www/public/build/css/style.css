@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap");
-.quizStack .quizContainer .qText button, .btn-primary {
+.congrats a.btn-primary, .quizStack .quizContainer .qText button, .btn-primary {
   display: inline-block;
   border-radius: 5px 30px;
   padding: 8px 20px;
@@ -8,7 +8,7 @@
   font-size: medium;
   box-shadow: 3px 4px 6px #0d043b;
 }
-.quizStack .quizContainer .qText button:hover, .btn-primary:hover {
+.congrats a.btn-primary:hover, .quizStack .quizContainer .qText button:hover, .btn-primary:hover {
   transform: scale(0.9);
 }
 
@@ -166,6 +166,7 @@ header .container .row .makeit {
   font-family: "Bangers", cursive;
   letter-spacing: 0.2rem;
   font-size: 42px;
+  display: flex;
   color: #f61eb7;
   text-shadow: 2px 2px 5px #0d043b;
 }
@@ -182,32 +183,51 @@ header .container .row .makeit {
 .quizStack .quizContainer .qText .btn {
   display: flex;
   flex-wrap: wrap;
+  width: 90%;
   margin: 10px;
   font-size: 1.2rem;
 }
 
 .congrats {
   box-sizing: border-box;
-  width: 100vw;
+  border-radius: 4px;
+}
+.congrats .row {
+  width: 90vw;
+  margin: 20px;
   background-color: #4ca0af;
-  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 700px) {
+  .congrats .row {
+    flex-direction: column;
+  }
 }
 .congrats h2 {
   font-family: "Bangers", cursive;
-  font-size: 60px;
+  font-size: 4rem;
   color: #f61eb7;
   text-shadow: 5px 7px 10px #0d043b;
   letter-spacing: 0.2rem;
 }
 .congrats h3 {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 42px;
+  font-size: 2rem;
   color: #fbdc6f;
   text-shadow: 2px 2px 5px #0d043b;
 }
-.congrats a {
-  margin: 50px;
+.congrats a.btn-primary {
+  font-weight: 800;
+  background-color: #fb6733;
+  color: #fdc4b0;
+  display: inline-block;
+  width: 30%;
+  margin: 20px;
+  font-size: 1.2rem;
 }
 
 * {

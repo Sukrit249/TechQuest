@@ -15,8 +15,12 @@
     
       require_once '../php/includes/header.inc.php';       // Includes the header
     require_once '../php/functions.php';             // Includes the functions.php
-      echo "<div class='congrats'> <h2>Congratulations!!</h2> <h3>You got <span><h2>" . $_SESSION['score'] . "</h2><span> out of " . count($qa) . " correct!</h3>";
-      echo '<br><br><a class="btn-primary" href="quiz_sass.php">Try Again</a></div>';
+      echo "<div class='congrats'> <div class='row'>
+      <h2>Congratulations!!</h2> 
+      <h3>You got <span><h2>" . $_SESSION['score'] . 
+      "</h2></span> out of " . count($qa) . " correct!</h3> ";
+      echo '<br><br><a class="btn-primary" href="quiz_sass.php">Try Again</a>';
+      echo '<a class="btn-primary" href="../../index.php">Return Home</a></div></div>';
       session_destroy();
     } else {
         header("Location: quiz_sass.php");
