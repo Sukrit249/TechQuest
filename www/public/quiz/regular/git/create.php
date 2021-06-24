@@ -14,14 +14,13 @@ $qs = [
     //q1
       ["What happened if you type git status in the terminal? ", "It show modified file in working dicetory."],
       //q2
-      ["What is a repository in Git?", "Repository in Git is a place where Git stores all the files. 
-          Git can store the files either on the local repository or on the remote repository."],
+      ["What is a repository in Git?", "Repository in Git is a place where Git stores all the files."],
       //q3   
       ["Mention one  Git repository hosting function.", "Github"],
       //q4
       ["Is Gitrap a Git repository?", "No"],
       //q5
-      ["What's the name of this Git repsitory hosting finction?", "Gitlab"],
+      ["What's the name of the Git repsitory hosting finction that rhyme with riplats?", "Gitlab"],
       //q6
       ["", ""],
       //q7
@@ -36,15 +35,23 @@ $qs = [
     // define possile answers for the question with the same index
 $as = [
   //q0
-  ["Yes", "No",],
+  ["Yes",
+   "No", 
+   "Maybe"],
   //q1 
-  ["for q2", "for q22", "for q222"],
+  ["It show modified file in working dicetory", 
+  "Git says Hello!",
+   "This i sthe right answer truest me!"],
   //q2
-  ["for q3", "for q33", "for q333"],
+  ["a Club only for Gitmember", 
+  "Repository in Git is a place where Git stores all the files.", 
+  "it chatch all the deletet file, with that we can still get a file back"],
   //q3
-  ["for q4", "for q44", "for q444"],
+   ["for q5", "for q55", "for q555"],
   //q4
-  ["for q5", "for q55", "for q555"],
+ ["Gitlab", 
+  "Githat", 
+  "Gitfam"],
   //q5
   ["for q6", "for q66", "for q666"],
   //q6
@@ -56,9 +63,4 @@ $as = [
   //q9
   [""],
 ];
-
-
-
-
-?>
 

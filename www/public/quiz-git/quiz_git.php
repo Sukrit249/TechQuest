@@ -1,103 +1,80 @@
 <?php 
+session_start();
+  include '../quiz/regular/git/create.php';
   require_once '../php/includes/header.inc.php';       // Includes the header
   require_once '../php/functions.php';                 // Includes the functions.php
   require_once '../quiz/regular/git/create.php';       // Path to the php file where the 3 arrays are set
-  ?>
-  <!-- Page content stats here -->
+  
 
+   
+  //$_SESSION['inputs'] = [];
+  
+  if (!isset($_SESSION['quiz_counter'])) { // If the $_SEEION['quiz_counter'] is not already set 
+    // Creating a session variable with a counter for the question selection
+    $_SESSION['quiz_counter'] = 0;
+    $_SESSION['score'] = 0;
+  }
+  // just a shorter way to get the quiz counter value
+  $counter = $_SESSION['quiz_counter'];
+  global $qs;  
+  global $as;  
 
-<form action= "quizgit.php" method="post">
-<!--front cart-->
-    <div class="Quiz">
-       <?php echo $qs[0][0];?>
-    </div>
-<!--back cart-->
-          <div class="answer">
-                <input class="answer" type="radio" name="aw" value="1" required="required">
-                  <?php echo $as [0][0];?>
-                  <br>
-                <input class="answer" type="radio" name="aw" value="1" required="required">
-            <?php echo $as [0][1];?>
-          </div>
-            <div class="Submit">
-              <input class="Submit" type="submit" value="Next">
-                <a href="next.php"></a>
-            </div>
-</from>
+?>
+  
+  
+<!-- Creating the form for the questions using the elements out of the arrays
+     to fill in the text of the answer and the value thats gona be send to the result.php -->
+<form action="result.php" method="POST">
 
-<form action= "quizgit.php" method="post">
-<!--front cart-->
-    <div class="Quiz">
-       <?php echo $qs[2][0];?>
-    </div>
-<!--back cart-->
-      <div class="answer">
-              <input class="answer" type="radio" name="aw" value="1" required="required">
-                <?php echo $as [1][0];?>
-                <br>
-              <input class="answer" type="radio" name="aw" value="1" required="required">
-           <?php echo $as [1][1];?>
-      </div>
-        <div class="Submit">
-          <input class="Submit" type="submit" value="Next">
-            <a href="next.php"></a>
-        </div>
-<form action= "quizgit.php" method="post">
-<!--front cart-->
-    <div class="Quiz">
-       <?php echo $qs[3][0];?>
-    </div>
-<!--back cart-->
-      <div class="answer">
-              <input class="answer" type="radio" name="aw" value="1" required="required">
-                <?php echo $as [2][0];?>
-                  <br>
-              <input class="answer" type="radio" name="aw" value="1" required="required">
-           <?php echo $as [2][1];?>
-      </div>
-        <div class="Submit">
-          <input class="Submit" type="submit" value="Next">
-            <a href="next.php"></a>
-        </div>
-</from>
+  <h1>
+    <?php
+    echo "hi bey";
+     echo $qs[$counter][0]; ?>
+  </h1>
+ 
+  <input 
+    type="radio" 
+    name="A" 
+    id="A1" 
+    value="
+      <!-- <?php $as[$counter][0]; ?> -->
+    <?php $as[$counter][0];?>
+    ">
+  <label 
+    for="A1">
+      <?php echo $as[$counter][0]; ?>
+    </label>
+    <br>
 
-<form class="quizbody" action= "quizgit.php" method="post">
-<!--front cart-->
-    <div class="Quiz">
-       <?php echo $qs[4][0];?>
-    </div>
-<!--back cart-->
-      <div class="answer">
-              <input class="answer" type="radio" name="aw" value="1" required="required">
-                <?php echo $as [3][0];?>
-                  <br>
-              <input class="answer" type="radio" name="aw" value="1" required="required">
-           <?php echo $as [3][1];?>
-      </div>
-        <div class="Submit">
-            <input class="Submit" type="submit" value="Next">
-              <a href="next.php"></a>
-        </div>
-</from>
+  <input 
+    type="radio" 
+    name="A" 
+    id="A2" 
+    value="
+      <?php  $as[$counter][1]; ?>
+    ">
+  <label 
+    for="A2">
+     <?php echo $as[$counter][1]; ?>
+  </label>
+<br>
 
-<form action= "quizgit.php" method="post">
-<!--front cart-->
-    <div class="Quiz">
-       <?php echo $qs[5][0];?>
-    </div>
-<!--back cart-->
-      <div class="answer">
-              <input class="answer" type="radio" name="aw" value="1" required="required">
-                <?php echo $as [4][0];?>
-                  <br>
-              <input class="answer" type="radio" name="aw" value="1" required="required">
-           <?php echo $as [4][1];?>
-      </div>
-        <div class="Submit">
-            <input class="Submit" type="submit" value="Next">
-              <a href="next.php"></a>
-        </div>
-</from>
+  <input 
+    type="radio" 
+    name="A" 
+    id="A3" 
+    Value="
+      <?php  $as[$counter][1]; ?>
+    ">
+  <label 
+    for="A3">
+      <?php echo $as[$counter][2]; ?>
+</label>
+<br>
+
+  <button>SENDEN</button>
+</form>
+
 
 
 
