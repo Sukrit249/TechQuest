@@ -5,20 +5,17 @@ session_start(); // starting/continue the session
   require_once '../php/functions.php';             // Includes the functions.php
   require_once '../quiz/regular/sass/create.php';   // Path to the php file where the 3 arrays are set
  
-  //test
+  // Creating an empty array for the answers given by the client
 
-
-  //end test
-// Creating an empty array for the answers given by the client
-$_SESSION['score'] = [];
   
 if (!isset($_SESSION['quiz_counter'])) { // If the $_SEEION['quiz_counter'] is not already set 
   // Creating a session variable with a counter for the question selection
   $_SESSION['quiz_counter'] = 0;
+
+  $_SESSION['score'] = 0;
 }
 // just a shorter way to get the quiz counter value
 $counter = $_SESSION['quiz_counter'];
-
 
  function runQuestion($counter) {
    global $qa;
@@ -30,16 +27,6 @@ $counter = $_SESSION['quiz_counter'];
 
     
  }
-
-
-
-//  $score = 0;
-
-//  foreach ($variable as $key => $value) {
-//    # code...
-//  }
-
-
 
   ?>
 
@@ -66,8 +53,7 @@ $counter = $_SESSION['quiz_counter'];
 
       </div>
 
-      <!-- <button type="submit" class="btn" value="Finished">Finished</button> -->
-
+      
 
     </form> 
   </div>

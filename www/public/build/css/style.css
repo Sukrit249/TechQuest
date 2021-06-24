@@ -186,6 +186,30 @@ header .container .row .makeit {
   font-size: 1.2rem;
 }
 
+.congrats {
+  box-sizing: border-box;
+  width: 100vw;
+  background-color: #4ca0af;
+  border-radius: 5px;
+  justify-content: center;
+}
+.congrats h2 {
+  font-family: "Bangers", cursive;
+  font-size: 60px;
+  color: #f61eb7;
+  text-shadow: 5px 7px 10px #0d043b;
+  letter-spacing: 0.2rem;
+}
+.congrats h3 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 42px;
+  color: #fbdc6f;
+  text-shadow: 2px 2px 5px #0d043b;
+}
+.congrats a {
+  margin: 50px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
