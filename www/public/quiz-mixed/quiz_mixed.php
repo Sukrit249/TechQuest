@@ -48,8 +48,8 @@ $counter = $_SESSION['quiz_counter'];
         <button type="submit" class="btn" name="A" value="<?php echo $as[$counter][1];?>"><?php echo $as[$counter][1];?></button> 
         <button type="submit" class="btn" name="A" value="<?php echo $as[$counter][2];?>"><?php echo $as[$counter][2];?></button> 
 
-          </div>
-        </div>
-        
-      </form> 
+      </div>
     </div>
+        
+  </form> 
+</div>

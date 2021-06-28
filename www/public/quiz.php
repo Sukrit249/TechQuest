@@ -25,49 +25,48 @@ if (isset($_GET['quiz'])) {
 $info = $_SESSION['info'];
 $qs = $_SESSION['qs'];
 $as = $_SESSION['as'];
-/*
-    echo '<pre>';
-    echo 'Info<br>';
-    var_dump($info);
-    echo 'Qs<br>';
-    var_dump($qs);
-    echo 'As<br>';
-    var_dump($as);
-    echo '<pre>';
-  */
 
 ?>
-<div class="cContainer">
-  <div>
-    <h1>Question <?php echo $_SESSION['question']; ?>:</h1>
-  </div>
-  <div>
-    <h2><?php echo $qs[$_SESSION['question'] - 1][0]; ?></h2>
-  </div>
 
-  <div>
-    <form action="result.php" method="POST">
-      <?php
-      shuffle($as[$_SESSION['question'] - 1]);
-      //echo '<pre>'; var_dump($as[$_SESSION['question']-1]); echo '</pre>'; 
-      $i = 1;
-      foreach ($as[$_SESSION['question'] - 1] as $key => $value) {
-        //echo "KEY = " . $key . " => " . $value . " ";
-      ?><div>
-        <label for="A<?php echo $i; ?>"><?php echo $value; ?></label>
-        <input type="radio" name="A" id="A<?php echo $i; ?>" value="<?php echo $value;?>">
-      </div>
-      <?php
 
-        $i++;
-      }
-      ?>
-      <div>
-        <button name="button" value="submited">Send</button>
-      </div>
-    </form>
+
+
+
+<div class="quizStack">
+  
+  <div class="sass-intro">
+    <h2><?php echo $info[0]; ?></h2>
+    <p class="freebie">
+      Made by <?php echo $info[1]; ?>
+    </p>
   </div>
+  
+  <form action="result.php" method="POST">
+    <div class="quizContainer">
+      <div class="qText">
+        <h3>Question <?php echo $_SESSION['question']?></h3>
+        <h4> <?php echo $qs[$_SESSION['question']-1][0]; ?> </h4>
+        <br>
+            <?php
+            shuffle($as[$_SESSION['question'] - 1]);
+            //echo '<pre>'; var_dump($as[$_SESSION['question']-1]); echo '</pre>'; 
+            $i = 1;
+            foreach ($as[$_SESSION['question'] - 1] as $key => $value) {
+              //echo "KEY = " . $key . " => " . $value . " ";
+              ?>
+              <button type="submit" class="btn" name="A" value="<?php echo $value; ?>"><?php echo $value; ?></button> 
+
+              <?php
+
+              $i++;
+            }
+            ?>
+      </div>
+    </div>
+  </form>
 </div>
+
+   
 
 <?php
 require_once 'php/includes/footer.inc.php';

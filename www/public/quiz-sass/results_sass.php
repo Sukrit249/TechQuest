@@ -20,7 +20,7 @@
       <h3>You got <span><h2>" . $_SESSION['score'] . 
       "</h2></span> out of " . count($qa) . " correct!</h3> ";
       echo '<br><br><a class="btn-primary" href="quiz_sass.php">Try Again</a>';
-      echo '<a class="btn-primary" href="../../index.php">Return Home</a></div></div>';
+      echo '<a class="btn-primary" href="../index.php">Return Home</a></div></div>';
       session_destroy();
     } else {
         header("Location: quiz_sass.php");

@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap");
+.btn-primary, .btn-guess, .quizStack .quizContainer .qText button, .congrats a.btn-primary {
+  display: inline-block;
+  border-radius: 5px 30px;
+  padding: 8px 20px;
+  margin: 3px;
+  font-family: "Press Start 2P", cursive;
+  font-size: medium;
+  box-shadow: 3px 4px 6px #0d043b;
+}
+
+.btn-primary:hover, .btn-guess:hover, .quizStack .quizContainer .qText button:hover, .congrats a.btn-primary:hover {
+  transform: scale(0.9);
+}
+
+.btn-primary {
+  background-color: #fb6733;
+  color: #fdb297;
+}
+
+.btn-primary:disabled {
+  background-color: #999999;
+  color: #555555;
+}
+
+header {
+  background: linear-gradient(#2428f4, #66e7ff);
+  color: #fbdc6f;
+}
+
+header .container {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+header .container .row {
+  max-width: 100%;
+  display: block;
+  justify-content: space-between;
+}
+
+@media (min-width: 1390px) {
+  header .container .row {
+    display: flex;
+  }
+}
+
+header .container .row .logo-title {
+  flex-grow: 2;
+}
+
+header .container .row .logo-title a div {
+  display: flex;
+}
+
+header .container .row .logo-title img {
+  width: 7rem;
+  filter: drop-shadow(5px 5px 5px #f61eb7);
+}
+
+header .container .row .logo-title h1 {
+  font-family: "Bangers", cursive;
+  font-size: 5rem;
+  color: #fbdc6f;
+  text-shadow: 5px 5px 10px #f61eb7;
+  letter-spacing: 0.2rem;
+}
+
+header .container .row .tagline {
+  flex-grow: 1;
+}
+
+header .container .row .tagline p {
+  font-size: 1.2rem;
+}
+
+header .container .row .makeit {
+  flex-grow: 1;
+}
+
+.quizzes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 92vw;
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  color: #2428f4;
+  background-color: #66e7ff;
+  border-radius: 5px 25px;
+  margin: 20px;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  box-shadow: 5px 7px 10px #0d043b;
+}
+
+.card .card-img-top {
+  width: 100%;
+  border-radius: 10px 30px;
+}
+
+.card .card-body .card-title {
+  font-family: "Bangers", cursive;
+  font-size: 3.25rem;
+  letter-spacing: 0.15rem;
+  color: #f61eb7;
+  text-shadow: 3px 4px 5px #2428f4;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+.card .card-body .card-text {
+  font-family: "IBM Plex Mono", monospace;
+  color: #0d043b;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 100px;
+  right: 10px;
+}
+
+hr {
+  line-height: 2em;
+  margin: 1em 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: block;
+}
+
+#creator {
+  font-family: "Bangers", cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#creator input[type=text] {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 80%;
+  height: 3rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+#creator input[type=radio] {
+  transform: scale(2);
+}
+
+#step2 {
+  display: none;
+}
+
+#step2 .container {
+  text-align: center;
+  display: block;
+}
+
+#step2 .container .cards {
+  display: flex;
+  justify-content: center;
+}
+
+#step2 .container .cards .card {
+  width: 12rem;
+}
+
+#step2 .container .cards .card .img img {
+  cursor: pointer;
+}
+
+#addQuestion, #save_quiz {
+  display: none;
+}
+
+#qs {
+  display: flex;
+}
+
+.question {
+  text-align: center;
+  display: block;
+}
+
+.question p {
+  display: flex;
+  justify-content: space-between;
+}
+
+#save_quiz, #create_quiz {
+  margin: 2em 0;
+}
+
+.cContainer {
+  text-align: center;
+}
+
+.cContainer #createComplete h1 {
+  font-family: "Bangers", cursive;
+  font-size: 3em;
+}
+
+.qContainer {
+  display: block;
+  text-align: center;
+}
+
+.Quiz {
+  margin-top: 20px;
+  font-size: 200%;
+  font-weight: 500;
+  text-align: left;
+  box-sizing: content-box;
+  width: 100%;
+  border: solid green 3px;
+}
+
+.answer {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 150%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border: solid red 3px;
+  padding: 35px;
+}
+
+.Submit {
+  margin-top: 20px;
+  box-sizing: content-box;
+  width: 25%;
+  border: solid yellow;
+  padding: 5px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.quizStack {
+  box-sizing: border-box;
+  width: 100vw;
+  background-color: #4ca0af;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.quizStack .sass-intro {
+  margin: 10px 10px 50px 10px;
+  padding: 10px;
+  display: inline-block;
+  width: 90vw;
+  height: 200px;
+  font-size: 1.1rem;
+}
+
+.quizStack .sass-intro h2 {
+  font-family: "Bangers", cursive;
+  font-size: 60px;
+  color: #f61eb7;
+  text-shadow: 5px 7px 10px #0d043b;
+  letter-spacing: 0.2rem;
+}
+
+.quizStack .sass-intro .freebie {
+  background-color: #91c6d0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px #060e0f;
+}
+
+.quizStack .quizContainer {
+  width: 80vw;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #66e7ff;
+  box-shadow: 5px 5px 8px #060e0f;
+  justify-content: space-around;
+}
+
+.quizStack .quizContainer .qText {
+  font-family: "IBM Plex Mono", monospace;
+  padding: 10px;
+}
+
+.quizStack .quizContainer .qText h3 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 0.2rem;
+  font-size: 42px;
+  display: flex;
+  color: #f61eb7;
+  text-shadow: 2px 2px 5px #0d043b;
+}
+
+.quizStack .quizContainer .qText h4 {
+  color: #2d5f68;
+  font-size: larger;
+}
+
+.quizStack .quizContainer .qText button {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 800;
+  background-color: #fb6733;
+  color: #fdc4b0;
+}
+
+.quizStack .quizContainer .qText .btn {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+.congrats {
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.congrats .row {
+  width: 90vw;
+  margin: 20px;
+  background-color: #4ca0af;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .congrats .row {
+    flex-direction: column;
+  }
+}
+
+.congrats h2 {
+  font-family: "Bangers", cursive;
+  font-size: 4rem;
+  color: #f61eb7;
+  text-shadow: 5px 7px 10px #0d043b;
+  letter-spacing: 0.2rem;
+}
+
+.congrats h3 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 2rem;
+  color: #fbdc6f;
+  text-shadow: 2px 2px 5px #0d043b;
+}
+
+.congrats a.btn-primary {
+  font-weight: 800;
+  background-color: #fb6733;
+  color: #fdc4b0;
+  display: inline-block;
+  width: 30%;
+  margin: 20px;
+  font-size: 1.2rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: calc(10px + 0.2vw);
+  }
+}
+
+body {
+  background-color: #2d5f68;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
+  width: 100%;
+}
+
+body a {
+  text-decoration: none;
+  color: #f61eb7;
+}
+
+body a:hover {
+  color: #fbdc6f;
+  transform: scale(0.9);
+}
+
+pre {
+  color: yellow;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

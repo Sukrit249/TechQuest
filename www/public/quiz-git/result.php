@@ -31,7 +31,7 @@
     <h3>You got <span><h2><?php echo $_SESSION['score'];?></h2></span> out of <?php echo count($qs)?> correct!</h3>
     <br><br>
     <a class="btn-primary" href="quiz_git.php">Try Again</a>
-    <a class="btn-primary" href="../../index.php">Return Home</a>
+    <a class="btn-primary" href="../index.php">Return Home</a>
   </div>
 </div>
 
