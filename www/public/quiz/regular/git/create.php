@@ -21,14 +21,7 @@ $qs = [
       ["Is Gitrap a Git repository?", "No"],
       //q5
       ["What's the name of the Git repsitory hosting finction that rhyme with riplats?", "Gitlab"],
-      //q6
-      ["", ""],
-      //q7
-      ["", ""],
-      //q8
-      ["", ""],
-    //q9
-    ["", ""],
+ 
 ];
 
 
